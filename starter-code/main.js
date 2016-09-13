@@ -4,14 +4,14 @@ var cardThree = "king";
 var cardFour = "king";
 
 
-if (cardOne == cardTwo) {
-		window.alert ("That's correct");
+if (cardOne === cardTwo) {
+		alert ("You've found a match!");
 }	
 
-	else if (cardThree == cardFour) {
-		window.alert ("That's correct");
+	else if (cardThree === cardFour) {
+		alert ("You've found a match");
 }
 
 	else {
-		window.alert ("That's incorrect. Please try again.")
+		alert ("Sorry, try again.")
 	}
