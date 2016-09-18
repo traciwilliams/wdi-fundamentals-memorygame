@@ -32,11 +32,12 @@
     font-size: 0;
 }
 
+
 .name{
 	color: #ff0000;
 }
 
-#wrapper {
+#wrapper { 
 /*	width: 960px;
     margin: 0 auto;*/
     text-align: center;
@@ -53,10 +54,8 @@ h2 {
 }
 
 footer {
-	
 	background-color: #808080;
 	clear: both; /*puts at the bottom and doesn't float right or left..need to read on this*/
-
 }
 
 nav {
@@ -77,3 +76,7 @@ a:hover{
 	background-color: #ee5f3c;
 }
 
+img {
+height: 100%;
+width: 100%;
+}
