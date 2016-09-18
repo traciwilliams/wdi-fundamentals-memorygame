@@ -3,7 +3,7 @@
 	height: 50%;
 	width: 50%;
 	display: inline-block;
-	background-color: grey;
+	background-color: white;
 	float: left;
 	padding: 100px;
 	margin: 8%;
@@ -21,7 +21,6 @@
 	float: left;
 
 }
-
 
 
 .clearfix:after { /*clears the nav behind the buttons*/
