@@ -21,21 +21,21 @@ if (cardOne === cardTwo) {
 
 
 //sets up the board
-var boardGame = document.getElementById("gameboard"); //targets gameboard id
+var board = document.getElementById("game-board"); //targets gameboard id
 
 var createBoard = function() {
 	for (var i = 0; i < cards.length; i++) {//card length, depends on how many cards I put in my array
-		var newCard = document.createElement("div"); //as it loops it's to create a div
-		newCard.className = "card"; //each div should have the class name card
+		var cardElement = document.createElement("div"); //as it loops it's to create a div
+		cardElement.className = "card"; //each div should have the class name card
 		//var newCardName = document.createTextNode("card"); within the div the word card should appear
-		newCard.setAttribute("data-card", cards[i]);//not sure what this does but I took the code from the solution
+		cardElement.setAttribute("data-card", cards[i]);//not sure what this does but I took the code from the solution
 		
-		newCard.addEventListener("click", isTwoCards);//on the click the isTwoCards function will start
-		boardGame.appendChild(newCard); //I have an error here and I'm not sure why
-	}
+		cardElement.addEventListener("click", isTwoCards);//on the click the isTwoCards function will start
+		board.appendChild(cardElement); //I have an error here and I'm not sure why
 }
 
 
+	}
 var isTwoCards = function() {
 	cardsInPlay.push(this.getAttribute("data-card"));
 	
@@ -48,10 +48,10 @@ var isTwoCards = function() {
 	}
 }
 
-	if (cardsInPlay.length === 2){ //if two cards are chosen
-		isMatch(cardInPlay);//start the function isMatch
-		cardsInPlay = [];//clears cards to try again
-	}
+		if (cardsInPlay.length === 2){ //if two cards are chosen
+			isMatch(cardsInPlay);//start the function isMatch
+			cardsInPlay = [];//clears cards to try again
+		}
 
 
 
